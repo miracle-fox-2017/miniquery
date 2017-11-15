@@ -80,33 +80,13 @@ function request(obj){
 5. Release 4- MiniQuery  
 Adalah sebuah function dengan meng-instance class baru untuk melakukan chaining method hide(), show(), addClass(pointer, newAddClass), removeClass(pointer, newRemoveClass), on(pointer, events, cb), dan request(obj)
 ```js
-function miniquery(pointer){
-  let docs = new Complete(pointer)
-  return docs
-}
-
-class Complete{
-  constructor(pointer){
-    this.pointer = pointer
-  }
-  
-  hide(){
-    let docs = document.querySelectorAll(this.pointer)
-    docs.forEach(d=>{
-      d.style.display = 'none'
-    })
-  }
-  
-  show(){
-    let docs = document.querySelectorAll(this.pointer)
-    docs.forEach(d=>{
-      d.style.display = 'inline'
-    })
-  }
-  
-}
-
+hide()
+show()
+addClass(pointer, newAddClass)
+removeClass(pointer, newRemoveClass)
+on(pointer, events, cb)
+request(obj)
 ```
 
-reference: http://youmightnotneedjquery.com/
+reference: http://youmightnotneedjquery.com/  
 :rocket:
