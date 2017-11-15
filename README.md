@@ -2,14 +2,14 @@
 Pembuatan library dengan menggunakan vannila javascript   
 
 
-1. Release 0- Selector library
+1. Release 0- Selector library  
 Melakukan pencarian by element menggunakan metode querySelector
 ```
 document.querySelector(pointer)
 ``` 
 
 
-2. Release 1- DOM Manipulation
+2. Release 1- DOM Manipulation  
 Manipulation DOM hide, show, addClass, removeClass
 ```js
 function hide(pointer){
@@ -42,7 +42,7 @@ function removeClass(pointer, newRemoveClass){
 ```
 
 
-3. Release 2-Event Dispatcher
+3. Release 2-Event Dispatcher  
 Merubah event yang ditentukan 
 ```js
 function on(pointer, events, cb){
@@ -54,7 +54,7 @@ function on(pointer, events, cb){
 ```
 
 
-4. Release 3- Ajax
+4. Release 3- Ajax  
 Simple call yang merujuk server lain dengan AJAX javascript
 note: server tujuan harus support dengan CORS
 ```js
@@ -77,8 +77,8 @@ function request(obj){
 
 ```
 
-5. Release 4- MiniQuery
-Adalah sebuah function dengan meng-instance class baru untuk melakukan chaining methode hide(), dan show()
+5. Release 4- MiniQuery  
+Adalah sebuah function dengan meng-instance class baru untuk melakukan chaining method hide(), show(), addClass(pointer, newAddClass), removeClass(pointer, newRemoveClass), on(pointer, events, cb), dan request(obj)
 ```js
 function miniquery(pointer){
   let docs = new Complete(pointer)
@@ -108,4 +108,5 @@ class Complete{
 
 ```
 
-ref: http://youmightnotneedjquery.com/
+reference: http://youmightnotneedjquery.com/
+:rocket:
