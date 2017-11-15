@@ -79,15 +79,32 @@
       })
     }
 
+
     function demoMiniQuery() {
-      // miniquery
       miniquery("#eyed").hide()
-      setTimeout(function() {
+      setTimeout(function() {;
         miniquery("#eyed").show()
       }, 2000)
+
+      miniquery(".klass").on('click', function() {
+        alert("Awesome");
+      })
+
+      let miniqueri = new MiniQuery();
+      miniqueri.ajax({
+        url: 'http://localhost:3000/',
+        type: 'GET',
+        success: function(data) {
+          console.log("Success: ", data)
+        },
+        fail: function() {
+          console.log("ERROR")
+        }
+      })
     }
 
     function demoAlias() {
+      let $ = miniquery;
       $("#eyed").hide()
       setTimeout(function() {
         $("#eyed").show()
