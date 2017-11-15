@@ -54,10 +54,10 @@
     }
 
     function demoDOM() {
-      DOM.hide('.klass')
-      DOM.show('.klass')
-      DOM.removeClass('.klass', 'shaded')
-      DOM.addClass('.klass', 'shaded')
+      // DOM.hide('.klass')
+      // DOM.show('.klass')
+      // DOM.removeClass('.klass', 'shaded')
+      // DOM.addClass('.klass', 'shaded')
     }
 
     function demoEventDispatcher() {
@@ -88,6 +88,7 @@
     }
 
     function demoAlias() {
+      let $ = miniquery;
       $("#eyed").hide()
       setTimeout(function() {
         $("#eyed").show()
