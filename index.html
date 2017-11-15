@@ -42,15 +42,18 @@
   </body>
 
   <script>
-    function demoSweetSelector() {
-      console.log(`SweetSelector.select('#eyed')`)
-      console.log(SweetSelector.select('#eyed'))
+    function demoSweetSelector() { 
+      // console.log(SweetSelector.select('#eyed'))
+      // console.log(SweetSelector.select('#eyed'))
+      console.log(miniquery('#eyed'));
 
-      console.log(`SweetSelector.select('.klass')`)
-      console.log(SweetSelector.select('.klass'))
+      // console.log(SweetSelector.select('.klass'))
+      // console.log(SweetSelector.select('.klass'))
+      console.log(miniquery('.klass'));
 
-      console.log(`SweetSelector.select('a')`)
-      console.log(SweetSelector.select('a'))
+      // console.log(SweetSelector.select('a'))
+      // console.log(SweetSelector.select('a'))
+      console.log(miniquery('a'));
     }
 
     function demoDOM() {
