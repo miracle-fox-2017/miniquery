@@ -4,7 +4,7 @@
   "description": "miniquery, a jQuery clone",
   "main": "lib/miniquery.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+      "live": "live-server"
   },
   "repository": {
     "type": "git",
